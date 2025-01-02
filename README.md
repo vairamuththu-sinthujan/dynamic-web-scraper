@@ -56,6 +56,6 @@ WebScrapAI is a robust and intuitive tool that uses Gemini AI to scrape and proc
 Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.
 
 ### 🧑‍💻 Author
-Name : Vairamuththu Sinthujan
+Name : Vairamuththu Sinthujan  
 GitHub: vairamuththu-sinthujan
 
