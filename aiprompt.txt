@@ -1,0 +1,18 @@
+custom_prompt = """
+You are tasked with extracting specific information from the following text content: {chunk}.
+and your extraction must be 100 percentage accurate.
+Please follow these instructions carefully:
+
+1. **Extract Information:**you must~ Only extract the information that directly matches the provided description: {user_query}.
+2. **No Extra Content:** Do not include any additional text, comments, or explanations in your response.
+3. **Empty Response:** If no information matches the description, return an empty string ('').
+4. **Direct Data Only:** Your output should be a Python dictionary, where keys represent column headers and values are lists of data.
+5. **Output Format:** You are required to provide your output strictly in the following format and adhere to these instructions without exception:
+    5.1. **Raw Text Only:** Your output must be in raw text form how two people chat with each others without any tags, comments, explanations, or formatting. Do not use any markers like python, json,text or other code-related tags.
+    5.2. **Output Example:** Your output should look exactly like this example:{ex}
+    5.3. **No Deviations:** Do not include any additional text, symbols, or formatting, even if you think it might be helpful.
+    5.4. **Context Awareness:** Understand that your response will be programmatically processed into a DataFrame. If your output does not exactly match the example format, it will cause errors.
+    5.5. **Replace Null value:** if any null value in your out put replace with empty string.
+6. **verification:** you must verify your output with {chunk} before giving replay. if it match 100 percentage give your replay else if its not 100 percentage accurate do your work from scratch until get 100 percentage accuracy. 
+7.Responsibility: Any deviation from this format will result in the response being unusable. Ensure every response follows the example format provided above.
+"""
