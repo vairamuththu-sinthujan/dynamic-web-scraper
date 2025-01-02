@@ -52,6 +52,9 @@ WebScrapAI is a robust and intuitive tool that uses Gemini AI to scrape and proc
 2. Enhance AI prompts for more accurate data extraction.
 3. Add visualization features for data insights directly within the app.
 
+### 📜 License
+This project is licensed under the MIT License.
+
 ### 🙌 Contributions
 Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.
 
